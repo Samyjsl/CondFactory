@@ -1,0 +1,116 @@
+.container-form-reg, .container-form-avto {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(28, 28, 28, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+
+.block-reg {
+    margin-top: 35px;
+    width: 660px;
+    height: 620px;
+    background-color: var(--dark-brown);
+    border: 3px solid #FF7900;
+    border-radius: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25px;
+    box-sizing: border-box;
+}
+
+.block-avto {
+    margin-top: 35px;
+    width: 660px;
+    height: 380px;
+    background-color: var(--dark-brown);
+    border: 3px solid #FF7900;
+    border-radius: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25px;
+    box-sizing: border-box;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-title-areg {
+    color: var(--white);
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.form-input-areg {
+    font-family: 'Montserrat', sans-serif;
+    width: 560px;
+    height: 50px;
+    border: 3px solid #FF7900;
+    border-radius: 10px;
+    margin-bottom: 32px;
+    padding: 0 25px;
+    box-sizing: border-box;
+    background-color: transparent;
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 300;
+    outline: none;
+}
+
+.form-button-areg {
+    font-family: 'Montserrat', sans-serif;
+    width: 420px;
+    height: 58px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--orange);
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transform: 0.5s ease-in;
+    margin-top: -10px;
+}
+
+.form-button-avtoreg {
+    color: var(--orange);
+    font-size: 18px;
+    border: none;
+    margin-top: 20px;
+    font-weight: 500;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.form-button-avtoreg:hover {
+    color: var(--light-purple);
+    transform: scale(1.05);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.form-input-areg::placeholder {
+    color: var(--white);
+}
+
+.form-input-areg:focus {
+    border-color: var(--light-purple);
+    box-shadow: 0 0 5px rgba(174, 164, 231, 0.5);
+}
+
+.form-button-areg:hover {
+    background-color: var(--light-purple);
+    transform: scale(1.05);
+    transition: color 0.3s ease, transform 0.3s ease;
+}

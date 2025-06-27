@@ -1,0 +1,28 @@
+services:
+  php:
+    build: ./php/
+    container_name: php-docker
+    depends_on:
+      - mysql
+    ports:
+      - "8080:80"
+    volumes:
+      - ./src:/var/www/html
+  mysql:
+    container_name: mysql-docker
+    env_file:
+      - ./.env
+    # expose:
+    #   - 3306
+    image: mysql:8.0
+  phpmyadmin:
+    container_name: phpmyadmin-docker
+    depends_on:
+      - mysql
+    environment:
+      - PMA_HOST=mysql-docker
+      - PMA_PORT=3306
+      - PMA_SSL=1
+    image: phpmyadmin:5-apache
+    ports:
+      - "8081:80"

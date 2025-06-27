@@ -1,0 +1,330 @@
+:root {
+  --dark-gray: #1C1C1C;
+  --orange: #FF7900;
+  --white: #FFFFFF;
+  --dark-brown: #261716;
+  --light-purple: #A7A1E5;
+  --brown: #543D2A;
+}
+
+#catalog {
+    height: auto;
+    background-color: var(--brown);
+}
+
+.container-catalog {
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    width: 100%;
+}
+
+.container-filter {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-filter {
+    padding-left: 5.2vw;
+    padding-right: 4vw;
+}
+
+.block-title-filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 21px;
+    text-align: center;
+    color: var(--white);
+    width: 270px;
+    height: 60px;
+    background-color: var(--dark-brown);
+    border-radius: 20px 20px 0 0;
+}
+
+#product-filter-form {
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    height: 385px;
+    background-color: var(--white);
+    border-radius:  0 0 25px 25px;
+    margin-bottom: 20px;
+}
+
+#product-filter-form label {
+    padding: 25px 15px 0px 15px;
+}
+
+#product-filter-form div {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-button-filter {
+    font-family: 'Montserrat', sans-serif;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--orange);
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border: solid 1px #1C1C1C;
+}
+
+.block-label-input {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    color: var(--dark-gray);
+}
+
+.block-label-input div {
+    display: flex;
+    align-items: center;
+}
+
+.block-search input:not(:placeholder-shown) {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+.block-button-filter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.block-label-input label {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: 500;
+    font-size: 21px;
+}
+
+.block-label-input input[type="checkbox"] {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.form-button-filter:hover {
+    background-color: var(--light-purple);
+    transform: scale(1.05);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.sort-block {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding-top: 15px;
+}
+
+.sort-block span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--orange);
+}
+
+.sort-block button {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: underline;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--light-purple);
+    background-color: var(--brown);
+    border: none;
+    cursor: pointer;
+}
+
+.sort-block button:hover {
+    color: var(--white);
+    transform: scale(1.02);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.block-product-button {
+    padding-left: 2px;
+}
+
+#right-block-products {
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+    max-width: 1400px;
+    padding-bottom: 50px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 320px);
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.product-card {
+    background-color: var(--brown);
+    height: auto;
+    box-sizing: border-box;
+}
+
+.block-img {
+    max-width: 320px;
+}
+
+.block-img img {
+    width: 320px;
+    height: 302px;
+}
+
+.button-product {
+    width: 250px;
+    height: 50px;
+    border-radius: 15px;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--white);
+    background-color: var(--orange);
+    border: 2px solid #261716;
+    cursor: pointer;
+}
+
+.button-product:hover {
+    background-color: var(--light-purple);
+    transform: scale(1.05);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.block-add-button {
+    font-family: 'Bahnschrift', sans-serif;
+    display: flex;
+    flex-direction: row;
+    width: 120px;
+    height: 40px;
+    background-color: var(--light-purple);
+    color: var(--dark-gray);
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    border: 2px solid #261716;
+    padding-left: 4px;
+}
+
+.block-add-button button {
+    border: none;
+    text-decoration: none;
+    color: var(--dark-gray);
+    font-size: 29px;
+    height: 5px;
+    background-color: var(--light-purple);
+}
+
+.block-add-button p {
+    position: relative;
+    top: 2px;
+    font-weight: 400;
+    font-size: 32px;
+}
+
+.minus {
+    position: relative;
+    bottom: 15px;
+    cursor: pointer;
+}
+
+.plus {
+    position: relative;
+    bottom: 13px;
+    cursor: pointer;
+}
+
+.plus:hover, .minus:hover{
+    color: var(--white);
+    transform: scale(1.05);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.block-text {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--white);
+    padding-top: 3px;
+    padding-left: 4px;
+}
+
+.block-text h2 {
+    font-weight: 600;
+    font-size: 36px;
+    text-decoration: underline;
+}
+
+.block-text a h3{
+    padding-top: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.block-text a h3:hover {
+    color: var(--orange);
+    transform: scale(1.05);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.block-text h4 {
+    padding-top: 5px;
+    font-weight: 500;
+    font-size: 22px;
+    padding-bottom: 15px;
+}
+
+.no-products {
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px;
+    color: var(--white);
+}
+
+.block-search {
+    font-family: 'Montserrat', sans-serif;
+    width: 450px;
+    height: 35px;
+    border: 2px solid #ff7900;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    }
+    
+.block-search input {
+    padding-left: 10px;
+    padding-right: 15px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    flex: 1;
+}
+
+.block-search img {
+    width: 27px;
+    height: 27px;
+    cursor: pointer;
+}

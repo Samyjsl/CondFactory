@@ -1,0 +1,175 @@
+:root {
+  --dark-gray: #1C1C1C;
+  --orange: #FF7900;
+  --white: #FFFFFF;
+  --dark-brown: #261716;
+  --light-purple: #A7A1E5;
+  --brown: #543D2A;
+}
+
+/* Сброс стилей */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header, div {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+/* Сброс стилей */
+
+/* Стили header */
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-left: clamp(40px, 5.2vw, 100px);
+    padding-right: clamp(40px, 5.2vw, 100px);
+    align-items: center;
+    height: 100px;
+}
+
+.left-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: clamp(25px, 4.5vw, 75px);
+    padding-left: 4vw;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: clamp(25px, 4.5vw, 75px);
+}
+
+.header-image-logo {
+    width: 80px;
+    height: 83px;
+}
+
+.header-text {
+    color: #1C1C1C;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.right-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: clamp(20px, 3vw, 60px);
+    padding-right: 0.5vw;
+    cursor: pointer;
+}
+
+.header-image {
+    width: 40px;
+    height: 40px;
+}
+
+.block-header-text-image {
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+    align-items: center;
+}
+
+nav ul li a:hover,
+.right-header a:hover,
+.block-nav-footer a:hover {
+  color: #A7A1E5;
+  transform: scale(1.05);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+/* Стили header */
+
+/* Стили footer */
+footer {
+  height: 210px;
+  background-color: var(--white);
+  padding-left: 5.2vw;
+  padding-right: 5.2vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+.container-logo-nav-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3vw;
+}
+
+.block-nav-footer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.block-nav-footer a {
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--dark-gray);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.address-footer h3 {
+  font-weight: 600;
+  font-size: 28px;
+  color: var(--dark-gray);
+  text-align: center;
+}
+
+.block-number-footer h2{
+  font-weight: 600;
+  font-size: 48px;
+  color: var(--orange);
+}
+
+.contacts-footer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.block-number-footer-text h3 {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--dark-gray);
+}
+/* Стили footer */
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 48px;
+    color: var(--light-purple);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+

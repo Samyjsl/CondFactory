@@ -1,0 +1,277 @@
+:root {
+  --dark-gray: #1C1C1C;
+  --orange: #FF7900;
+  --white: #FFFFFF;
+  --dark-brown: #261716;
+  --light-purple: #A7A1E5;
+  --brown: #543D2A;
+}
+
+.container-basket-all {
+    background-color: var(--dark-brown);
+    height: auto;
+    padding-bottom: 50px;
+}
+
+.container-product {
+    display: flex;
+    flex-direction: row;
+}
+
+.block-add-button {
+    font-family: 'Bahnschrift', sans-serif;
+    display: flex;
+    flex-direction: row;
+    width: 120px;
+    height: 40px;
+    background-color: var(--light-purple);
+    color: var(--dark-gray);
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    border: 2px solid #261716;
+    padding-left: 4px;
+}
+
+.block-add-button button {
+    border: none;
+    text-decoration: none;
+    color: var(--dark-gray);
+    font-size: 29px;
+    height: 5px;
+    background-color: var(--light-purple);
+}
+
+.block-add-button p {
+    position: relative;
+    top: 2px;
+    font-weight: 400;
+    font-size: 32px;
+}
+
+.minus {
+    position: relative;
+    bottom: 15px;
+    cursor: pointer;
+}
+
+.plus {
+    position: relative;
+    bottom: 13px;
+    cursor: pointer;
+}
+
+.plus:hover, .minus:hover, .button-delete:hover {
+    color: var(--white);
+    transform: scale(1.025);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.product-title h3:hover {
+    color: var(--orange);
+    transition: color 0.3s ease, margin-left 0.3s ease;
+    margin-left: 3px;
+}
+
+.block-left-products img {
+    width: 265px;
+    height: 195px;
+    border: solid 2px #FF7900;
+    border-radius: 10px;
+}
+
+.container-basket {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 5.2vw;
+    padding-left: 17.5vw;
+}
+
+.block-left-products {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+.block-product-right {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+}
+
+.product-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-title h2 {
+    color: var(--white);
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.product-title h3 {
+    color: var(--white);
+    font-weight: 500;
+    font-size: 30px;
+    margin-top: -3px;
+}
+
+.block-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-top: 75px;
+}
+
+.button-delete {
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--orange);
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+.container-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 810px;
+    padding-left: 2vw;
+}
+
+.form-container {
+    width: 630px;
+    height: auto;
+    background-color: var(--dark-brown);
+    border: 3px solid #FF7900;
+    border-radius: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25px;
+    box-sizing: border-box;
+}
+
+.form-title {
+    color: var(--white);
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-input {
+    font-family: 'Montserrat', sans-serif;
+    width: 560px;
+    height: 50px;
+    border: 3px solid #FF7900;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    background-color: transparent;
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 300;
+    outline: none;
+}
+
+.form-input-small {
+    font-family: 'Montserrat', sans-serif;
+    width: 130px;
+    height: 50px;
+    border: 3px solid #FF7900;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    background-color: transparent;
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 300;
+    outline: none;
+}
+
+.form-textarea {
+    font-family: 'Montserrat', sans-serif;
+    width: 560px;
+    height: 150px;
+    border: 3px solid #FF7900;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    background-color: transparent;
+    color: var(--white);
+    font-size: 20px;
+    resize: none;
+    font-weight: 300 !important;
+    outline: none;
+}
+
+.form-button {
+    font-family: 'Montserrat', sans-serif;
+    width: 420px;
+    height: 58px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--orange);
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transform: 0.5s ease-in;
+    margin-bottom: 20px;
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder,
+.form-input-small::placeholder {
+    color: var(--white);
+}
+
+.form-textarea:focus,
+.form-input:focus, 
+.form-input-small:focus {
+    border-color: var(--light-purple);
+    box-shadow: 0 0 5px rgba(174, 164, 231, 0.5);
+}
+
+.form-button:hover {
+    background-color: var(--light-purple);
+    transform: scale(1.05);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.block-inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 13px;
+}
+
+.price {
+    color: var(--white);
+    font-weight: 600;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.title-2 {
+    padding-bottom: 300px;
+    padding-top: 200px;
+    color: var(--white);
+    font-size: 48px;
+    font-weight: 600;
+    padding-right: 30vw;
+}

@@ -1,0 +1,168 @@
+#about-company {
+    height: auto;
+    background-color: var(--dark-brown);
+}
+
+.container-about-company{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 5.2vw;
+    padding-right: 5.2vw;
+}
+
+.block-about-company-text {
+    max-width: 34.4vw;
+    text-align: justify;
+    padding-right: 2.5vw;
+}
+
+.text-company {
+    color: var(--white);
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.attention-text {
+    color: var(--orange);
+    text-decoration: underline;
+    font-size: 32px;
+}
+
+.container-history-company {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 5.2vw;
+    padding-right: 5.2vw;
+}
+
+.block-history-company-text {
+    max-width: 42.2vw;
+    text-align: justify;
+    padding-right: 2.5vw;
+}
+
+.container-mission-company {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.block-mission-text {
+    max-width: 80vw;
+    text-align: justify;
+}
+
+.block-target-company ul li{
+    list-style-type: disc;
+    margin-left: 40px;
+}
+
+.block-target-company {
+    padding-top: 30px;
+    max-width: 1420px;
+}
+
+.target-images {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 65px;
+}
+
+.block-advantages-product ul li{
+    list-style-type: disc;
+    margin-left: 40px;
+}
+
+.block-advantages-product {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    max-width: 1240px;
+}
+
+.block-about-product {
+    text-align: justify;
+    max-width: 80vw;
+}
+
+.container-our-products {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.container-slider-products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.block-title-product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 60px;
+    background-color: var(--dark-brown);
+    border-radius:  1.25vw;
+    border: 2px solid #FF7900;
+}
+
+.block-title-product h3 {
+    font-weight: 600;
+    color: var(--white);
+    font-size: 26px;
+}
+
+.block-img-slider {
+    height: 302px;
+    width: 453px;
+}
+
+.block-strelka-slider {
+    position: relative;
+    top: 210px;
+}
+
+.strelka-end {
+    right: -40px;
+}
+
+.strelka-start {
+    left: -40px;
+}
+
+.block-strelki {
+    height: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container-regions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 5.2vw;
+    padding-right: 5.2vw;
+}
+
+.block-regions {
+    max-width: 710px;
+    text-align: justify;
+    padding-bottom: 50px;
+}
+
+.block-regions_left {
+    padding-right: 2vw;
+}
+
+.block-regions_right {
+    padding-left: 2vw;
+}
